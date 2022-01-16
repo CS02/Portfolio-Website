@@ -1,4 +1,10 @@
 /* css stylesheet */
+/* https://www.youtube.com/watch?v=ZFQkb26UD1Y&t=9861s */
+html{
+    scroll-behavior: smooth;
+}
+
+
 section{
     height: 100vh;
     padding: 2rem;
@@ -12,6 +18,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
+    /* background-color: #FFDEE9;
+    background-image: linear-gradient(to right, #FFDEE9 0%, #B5FFFC 100%); */
+    /* background-image: linear-gradient( 103deg,  rgba(137,247,234,1) 7.3%, rgba(102,117,241,1) 100.2% ); */
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(102,117,241,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(137,247,224,1) 98.4% );
+
 }
 
 .navbar{
@@ -20,7 +32,7 @@ body{
     align-items: center;
     background-color: rgb(27, 26, 26);
     color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     height: 7%;
@@ -61,7 +73,7 @@ body{
 
 .toggle-button{
     position: absolute;
-    top: 36%;
+    top: 33%;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -181,13 +193,128 @@ body{
     transform: translate(0, -100%);
 }
 
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 .scroll-down-button{
     display: flex;
+    position: sticky;
     justify-content: center;
-    
+    padding-top: 80vh;
+    animation-name: fadeIn;
+    animation-duration: 5s;
 }
 
 .scroll-down-button img{
-    width: 5%;
-    height: 5%;
+    width: 5vh;
+    height: 5vh;
 }
+
+/* Software Section */
+.software-section{
+    padding-top: 20px;
+    
+}
+
+.header{
+    text-align:left;
+    top: 5%;
+    padding: 1rem;
+    color: white;
+    /* change color */
+    position: relative;
+    font-size:xx-large;
+}
+
+.software-grid{
+    display: grid;
+    gap: 75px;   
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 5%;
+}
+
+.software-grid img{
+    width: 100%;
+}
+
+.software-grid .software-box{
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.software-grid .software-box img{
+    vertical-align: middle;
+}
+
+.software-grid .software-box .caption{
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.software-grid .software-box:hover{
+    transform: scale(1.5);
+}
+
+.software-grid .software-box:hover .caption{
+    transform: translateY(0%);
+}
+
+/* End of software section */
+
+/* Start of Project section */
+.projects-section{
+    padding: 100px;
+}
+.box{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position:relative ;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.slide-img{
+    height: 50vmin;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;    
+}
+
+/* 5:57 */
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+/* End of Project section */
