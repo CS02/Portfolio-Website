@@ -1,5 +1,3 @@
-/* css stylesheet */
-/* https://www.youtube.com/watch?v=ZFQkb26UD1Y&t=9861s */
 html{
     scroll-behavior: smooth;
 }
@@ -18,16 +16,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%); */
-    /* background-color: #FFDEE9;
-    background-image: linear-gradient(to right, #FFDEE9 0%, #B5FFFC 100%); */
-    /* background-image: linear-gradient( 103deg,  rgba(137,247,234,1) 7.3%, rgba(102,117,241,1) 100.2% ); */
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(102,117,241,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(137,247,224,1) 98.4% );
 
 }
 
 .navbar{
-    display:flex;
+    display:flex; 
     justify-content: space-between;
     align-items: center;
     background-color: rgb(27, 26, 26);
@@ -289,40 +283,46 @@ body{
 .Project-header{
     text-align:left;
     top: 0.5%;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     color: white;
-    /* change color */
     position: relative;
     font-size:3.5vmin;
 }
 
 .carousel{
-    margin-top: 2%;
-    height: 100%;
-    width: 100%;
-}
-.flickity-viewport{
+    /* margin-top: 2%; */
     height: 90%;
+    width: 100%;
+    align-items: center;
+    /* background-color: lavender; */
+    
+}
+
+.flickity-viewport{
+    height: 100% !important;
+    /* background-color:lightcoral; */
 }
 
 .flickity-slider{
     height: 100%;
-    /* height: 80%; */
+    /* height: 60%; */
 }
 
 .carousel-cell{
+    margin-top: 6%;
     width: 30%;
-    /* margin-right: 10px; */
-    height: 100%;
+    margin-right: 10px;
+    /* height: 100%; changed */
+    height: 80%;
     border-radius: 15px;
-    /* background-size: cover; */
-    background-position: center center;
+    display: flex;
+    /* background-color: lightblue; */
 }
 
-.carousel-cell:before{
-    display: block;
+/* .carousel-cell:before{
+    display: flex;
     content: '';
-}
+} */
 
 .box{
     height: 100%;
