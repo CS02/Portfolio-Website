@@ -280,7 +280,7 @@ body{
 
 /* Start of Project section */
 .projects-section{
-    padding: 3%;
+    /* padding: 3%; */
 }
 
 .Project-header{
@@ -401,18 +401,20 @@ body{
 }
 
 .about-para{
-    width: 60%;
+    width: 100%;
     height: 100%;
-    padding: 2%;
+    padding: 5%;
     box-sizing: border-box;
+    font-family: phantomsans, sans-serif;  
+    display: flex;
+    align-items: center;
+    font-size: 3vmin;
+    justify-content: space-evenly;
+    overflow-y: scroll;
 }
 
-.about-para h6{
-    font-family: phantomsans, sans-serif;
-    display: flex;
-    font-size: 2vmin;
-    width: 100%;
-    justify-content: space-around;
+.about-para::-webkit-scrollbar{
+    display:none;
 }
 
 /* From cssbuttons.io */
@@ -424,8 +426,10 @@ body{
 .resume-button button {
     display: table;
     margin: 0 auto;
-    padding: 1.3em 3em;
-    font-size: 18px;
+    /* padding: 1.3em 3em; */
+    padding: 1% 2%;
+    font-size: 100%;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-family: Phantomsans, sans-serif;
@@ -439,16 +443,113 @@ body{
     outline: none;   
    }
    
-   .resume-button button:hover {
-    background-color:dimgray;
-    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
-    color: rgb(240, 12, 12);
-    transform: translateY(-7px);
-   }
-   
-   .resume-button button:active {
-    transform: translateY(-1px);
-   }
+.resume-button button:hover {
+transform: translateY(-7px);
+}
 
+.resume-button button:active {
+transform: translateY(-1px);
+}
 
 /* End of About me section */
+
+/* start of contact section */
+.contact-section{
+    height: 60vh;
+}
+
+.Contact-Header{
+    text-align:left;
+    padding-top: 2.5rem;
+    color: white;
+    position: relative;
+    font-size:3.5vmin;
+}
+
+
+.email-button{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display:flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    font-family: Phantomsans, sans-serif;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.email-button h1{
+    margin: 0;
+}
+
+.email-button .left-image img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.email-button .right-image img{
+    position: relative;
+    height: fit-content;
+    /* width: ; */
+}
+
+.linkedin-button{
+    width: 80%;
+    height: 10%;
+    background-color: beige;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-button h1{
+    margin: 0;
+}
+
+.linkedin-button .left-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.linkedin-button .right-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.github-button{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.github-button h1{
+    margin: 0;
+}
+
+.github-button .left-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.github-button .right-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
