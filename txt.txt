@@ -18,24 +18,20 @@
 <body>
     <nav class="navbar fixed-top">
         <div class="logo"><a href="#home-section"><img src="Images/C-Logo.png" alt=""></a></div>
-        <!-- 
+
         <a class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>  -->
-        <a onclick="Menu();" class="btn">
-            <span></span>
-            <span></span>
         </a>
 
         <div class="navbar-links">
-            
-            <ul class = "menu_list">
-                <li class = "menu_list"><a class = "menu_link" href="#about-section" onclick="Menu();">About</a></li>
-                <li class = "menu_list"><a class = "menu_link" href="#software-section" onclick="Menu();">Software</a></li>
-                <li class = "menu_list"><a class = "menu_link" href="#projects-section" onclick="Menu();">Projects</a></li>
-                <li class = "menu_list"><a class = "menu_link" href="#contact-section" onclick="Menu();">Contact</a></li>
+            <ul>
+                
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#software-section">Software</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -165,9 +161,11 @@
                         </div>
                         <div class="detail-box">
                             <div class="project-caption">
-                                <span>An app which allows the user to score a cricket match through an Apple Watch. </span>
-                                <a href="https://www.youtube.com/watch?v=PbRrkQxvPdQ">View demo</a>
+                                <span>A WatchOS App which allows its user to score a cricket game</span>
                             </div>
+                            <!-- <div class="project-skills">
+                                fix later
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -179,9 +177,11 @@
                         </div>
                         <div class="detail-box">
                             <div class="project-caption">
-                                <span>Designed and devloped this fully responsive portfolio website. </span>
-                                <a href="https://github.com/CS02/Portfolio-Website"> View on Github</a>
+                                <span>A WatchOS App which allows its user to score a cricket game</span>
                             </div>
+                            <!-- <div class="project-skills">
+                                fix later
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -193,8 +193,11 @@
                         </div>
                         <div class="detail-box">
                             <div class="project-caption">
-                                <span>Programmed the clasic Snake Game with the added features of various difficulties. </span>
+                                <span>A WatchOS App which allows its user to score a cricket game</span>
                             </div>
+                            <!-- <div class="project-skills">
+                                fix later
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -206,8 +209,11 @@
                         </div>
                         <div class="detail-box">
                             <div class="project-caption">
-                                <span>Constructed a 8-bit general-purpose processor wich can perform simple arithmetic and other operations. </span>
+                                <span>A WatchOS App which allows its user to score a cricket game</span>
                             </div>
+                            <!-- <div class="project-skills">
+                                fix later
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -219,7 +225,11 @@
                         </div>
                         <div class="detail-box">
                             <div class="project-caption">
-                                <span>Programmed the classic Connect-Four game. </span>
+                                <span>A WatchOS App which allows its user to score a cricket game</span>
+                            </div>
+                            <!-- <div class="project-skills">
+                                fix later
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -228,15 +238,16 @@
         </section>
         <!-- End of Projects section -->
 
+
         
         <!-- contact section start -->
         <section class = "contact-section" id = contact-section>
             <div class="Contact-Header">
-                <h1>Contact</h1>
+                <h1>Contact (work in progress)</h1>
             </div>
-            
+
             <div class="contact-buttons">
-                <button>
+                <div class="email-button">
                     <div class="left-image">
                         <img src="Images/Icons/email.png" alt="">
                     </div>
@@ -244,9 +255,9 @@
                     <div class="right-image">
                         <img src="Images/Icons/external-link-svgrepo-com.svg" alt="">
                     </div>
-                </button>
+                </div>
 
-                <button>
+                <div class="linkedin-button">
                     <div class="left-image">
                         <img src="Images/Icons/LI-In-Bug.png" alt="">
                     </div>
@@ -254,9 +265,9 @@
                     <div class="right-image">
                         <img src="Images/Icons/external-link-svgrepo-com.svg" alt="">
                     </div>
-                </button>
+                </div>
 
-                <button>
+                <div class="github-button">
                     <div class="left-image">
                         <img src="Images/Icons/github-svgrepo-com.svg" alt="">
                     </div>
@@ -264,15 +275,14 @@
                     <div class="right-image">
                         <img src="Images/Icons/external-link-svgrepo-com.svg" alt="">
                     </div>
-                </button>
-
+                </div>
             </div>
+
         </section>
         <!-- contact section end -->
     </div>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    
 </body>
 </html>
 <!-- Credits

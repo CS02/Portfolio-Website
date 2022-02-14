@@ -66,110 +66,60 @@ body{
     height: fit-content;
 }
 
-.btn span{
-    visibility: hidden;
+.navbar-links li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 33%;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
 
 @media(max-width: 700px){
-    .btn{
+    .toggle-button{
         display: flex;
-        visibility: visible;
-        top: 20px;
-        right: 20px;
-        z-index: 2;
-    }
-    .btn span{
-        visibility: visible;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: flex;
-        width: 18px;
-        height: 2px;
-        background: rgba(247,72,78,255);
-        transition: .5s;
-    }
-    
-    /*position of each line within the button space (distance from top and bottom of the height in .btn)*/
-    .btn span:nth-child(1){
-        top: 45%;
-    }
-    .btn span:nth-child(2){
-        top: 55%;
-    }
-    
-    .btn.is-active span{
-        background: rgba(247,72,78,255);
-    }
-    
-    /*transformation to X*/
-    .btn.is-active span:nth-child(1){
-        top: 50%;
-        transform:  rotate(-45deg);
-    }
-    .btn.is-active span:nth-child(2){
-        top: 50%;
-        transform:  rotate(45deg);
     }
 
-    .navbar-links.is-active{
-        transition: .5s;
-        opacity: 1;
-        visibility: visible;
+    .navbar-links{
+        display: none;
+        width: 100%;
     }
-    .navbar-links.is-off{
-        transform: .5s;
-        opacity: 0;
-        visibility: hidden;
-    }
-    .menu_list.is-active:after:active{
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    
-    .menu_list  {
-        display: flex;
+
+    .navbar{
         flex-direction: column;
-        list-style-type: none;
+        align-items: flex-start;
     }
-    
-    .menu_list:not(:last-child){
-        margin-bottom: 30px;
-    }
-    
-    .navbar-links {
-        background: rgba(255, 255, 255, 1);
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        padding: 100px;
-        z-index: 1;
-        transform: .5s;
-        opacity: 0;
-        visibility: hidden;
-    }
-    /*each menu item */
-    .menu_link {
-        position: relative;
-        display: inline-flex;
-        font-weight: bold;
-        font-size: 48px;
-        color: whitesmoke;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    .menu_link:hover{
-        text-decoration: none;
-        color: rgba(247,72,78,255);
-    }
-    
-}
 
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
 
 @media(max-width: 1000px){
     .animated-title{
@@ -330,7 +280,7 @@ body{
 
 /* Start of Project section */
 .projects-section{
-    padding: 3%;
+    /* padding: 3%; */
 }
 
 .Project-header{
@@ -413,6 +363,10 @@ body{
 /* End of Project section */
 
 /* Start of About me section */
+/* .about-section{
+    height: 100vh;
+} */
+
 .about-header{
     text-align:left;
     padding-top: 2.5rem;
@@ -486,17 +440,11 @@ body{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    outline: none;
-    text-decoration: none;   
-}
-
-.resume-button a{
-    text-decoration: none;
-}
-
+    outline: none;   
+   }
+   
 .resume-button button:hover {
 transform: translateY(-7px);
-text-decoration: underline;
 }
 
 .resume-button button:active {
@@ -518,43 +466,90 @@ transform: translateY(-1px);
     font-size:3.5vmin;
 }
 
-.contact-buttons{
-    width: 100%;
-     height: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.contact-buttons button{
-    vertical-align: middle;
-    width: 70%;
-    height: 30%;
+.email-button{
+    width: 80%;
+    height: 10%;
     background-color: white;
+    display:flex;
+    margin: 0 auto;
+    padding: 1% 2%;
     font-family: Phantomsans, sans-serif;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
-.contact-buttons .left-image{
-    padding-left: 3%;
-    float: left;
-    height: 80%;
-    border-radius: 50%;
+.email-button h1{
+    margin: 0;
 }
 
-.contact-buttons .right-image{
-    padding-right: 3%;
-    float: right;
-    height: 80%;
-}
-
-.contact-buttons .left-image img{
+.email-button .left-image img{
+    position: relative;
     height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
-.contact-buttons .right-image img{
-    height: 100%;
+.email-button .right-image img{
+    position: relative;
+    height: fit-content;
+    /* width: ; */
 }
-/* End of Contact Section */
+
+.linkedin-button{
+    width: 80%;
+    height: 10%;
+    background-color: beige;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-button h1{
+    margin: 0;
+}
+
+.linkedin-button .left-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.linkedin-button .right-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.github-button{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    padding: 1% 2%;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.github-button h1{
+    margin: 0;
+}
+
+.github-button .left-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}
+
+.github-button .right-image img{
+    position: relative;
+    width: 3%;
+    height: fit-content;
+    align-items: flex-start;
+}

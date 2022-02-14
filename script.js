@@ -1,8 +1,12 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
-})
+function Menu(e){
+    let menu = document.querySelector('.navbar-links');
+    let btn = document.querySelector('.btn');
+
+    menu.classList.toggle('is-active');
+    btn.classList.toggle('is-active');
+
+    e.preventDefault();
+}
 
 
