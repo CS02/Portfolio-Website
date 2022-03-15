@@ -409,10 +409,16 @@ body{
     .carousel-cell{
         width: 100%;        
     }
+
+    .about .myPic{
+        display: none;
+    }
+
 }
 /* End of Project section */
 
 /* Start of About me section */
+
 .about-header{
     text-align:left;
     padding-top: 2.5rem;
@@ -450,13 +456,14 @@ body{
     width: 100%;
     height: 100%;
     padding: 5%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: phantomsans, sans-serif;  
     display: flex;
     align-items: center;
     font-size: 3vmin;
     justify-content: space-evenly;
     overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 .about-para::-webkit-scrollbar{
