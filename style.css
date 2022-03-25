@@ -580,5 +580,9 @@ transform: translateY(-1px);
     height: 100%;
 }
 
+.email {
+    width: 100%;
+    overflow: hidden;
+}
 
 /* End of Contact Section */
