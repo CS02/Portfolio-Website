@@ -1,0 +1,64 @@
+/* Software Section */
+.software-section{
+    padding-top: 20px;
+    height: auto;
+    
+}
+
+.header{
+    text-align:left;
+    padding-top: 2.5rem;
+    color: white;
+    position: relative;
+    font-size:3.5vmin;
+}
+
+.software-grid{
+    display: grid;
+    gap: 75px;   
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 5%;
+}
+
+.software-grid img{
+    width: 100%;
+}
+
+.software-grid .software-box{
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.software-grid .software-box img{
+    vertical-align: middle;
+}
+
+.software-grid .software-box .caption{
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.software-grid .software-box:hover{
+    transform: scale(1.5);
+}
+
+.software-grid .software-box:hover .caption{
+    transform: translateY(0%);
+}
+
+/* End of software section */

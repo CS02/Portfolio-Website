@@ -1,0 +1,94 @@
+/* Start of About me section */
+
+.about-header{
+    text-align:left;
+    padding-top: 2.5rem;
+    color: white;
+    position: relative;
+    font-size:3.5vmin;
+}
+
+.about{
+    display: flex;
+    position: relative;
+    height: 50%;
+    background-color: white;
+    align-items: center;
+    border-radius: 50px;
+    border: 3px solid #3E474F;
+}
+
+.about .myPic{
+    /* object-fit: contain; */
+    vertical-align: middle;
+    height: 90%;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.about .myPic img {
+    height: 100%;
+    width: auto;
+    border-radius: 25px;
+}
+
+.about-para{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    /* box-sizing: border-box; */
+    font-family: phantomsans, sans-serif;  
+    display: flex;
+    align-items: center;
+    font-size: 3vmin;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.about-para::-webkit-scrollbar{
+    display:none;
+}
+
+/* From cssbuttons.io */
+.resume-button{
+    padding-top: 3%;
+    width: 100%;
+}
+
+.resume-button button {
+    display: table;
+    margin: 0 auto;
+    /* padding: 1.3em 3em; */
+    padding: 1% 2%;
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: Phantomsans, sans-serif;
+    color: rgb(240, 12, 12);
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;   
+}
+
+.resume-button a{
+    text-decoration: none;
+}
+
+.resume-button button:hover {
+transform: translateY(-7px);
+text-decoration: underline;
+}
+
+.resume-button button:active {
+transform: translateY(-1px);
+}
+
+/* End of About me section */
