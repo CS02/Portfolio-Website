@@ -1,3 +1,18 @@
+@mixin hideTapHighlightColor() {
+    //Prevent highlight colour when element is tapped
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  
+  @mixin hardwareAccel() {
+    //Improve performance on mobile/tablet devices
+    transform: translateZ(0);
+  }
+  
+  @mixin improveAntiAlias() {
+    //Improve aliasing on mobile/tablet devices
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -55,6 +70,12 @@ body{
 .navbar-links li{
     list-style: none;
 }
+
+.navbar-links li :hover{
+    transform: scale(1.2);
+}
+
+
 
 .navbar-links li a{
     text-decoration: none;
@@ -256,6 +277,7 @@ body{
     padding-top: 70vh;
     animation-name: fadeIn;
     animation-duration: 5s;
+    
 }
 
 .scroll-down-button img{
@@ -263,9 +285,7 @@ body{
     height: 5vh;
 }
 
-
-
-
-
-
-
+.scroll-down-button :hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
